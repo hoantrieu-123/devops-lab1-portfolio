@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Lab 1 — My Portfolio</title>
+    <title>DevOps Lab 1 — Giới thiệu</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -66,31 +66,30 @@
     <div class="container">
         <!-- Navigation Menu -->
         <div class="nav">
-            <a href="index.html" class="active">Trang chủ</a> |
-            <a href="about.html">Giới thiệu</a> |
+            <a href="index.html">Trang chủ</a> |
+            <a href="about.html" class="active">Giới thiệu</a> |
             <a href="contact.html">Liên hệ</a>
         </div>
 
-        <h1> Hello, DevOps!</h1>
-        <h2>Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
+        <h1>Giới thiệu bản thân</h1>
+        <h2>Lab 1 — Thông tin cá nhân & Mục tiêu DevOps</h2>
 
         <div class="info">
             <img class="anh" src="anhcanhan.jpg" alt="anhcanhan">
-            <h1> Xin chào, Hoàng Xuân Triều</h1>
-            <h2>Lab 1 — Website đã được cập nhật tự động! </h2>
-            <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
-            <p> <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
-            <p> <strong>Ngày deploy:</strong> <span id="date"></span></p>
-            <p> <strong>Pipeline status:</strong> <span class="status"> Automated</span></p>
+            <h1>Hoàng Xuân Triều</h1>
+            <h2>Sinh viên / Kỹ sư DevOps tương lai</h2>
+            <p><strong>Tiểu sử:</strong> Đam mê công nghệ đám mây, tự động hóa quy trình CI/CD và văn hóa DevOps.</p>
+            <p><strong>Mục tiêu:</strong> Nắm vững GitHub Actions, Docker, kiểm thử tự động với Lighthouse CI.</p>
+            <p><strong>Sở thích:</strong> Lập trình web, xây dựng hệ thống tự động, tối ưu hóa hiệu năng.</p>
         </div>
 
         <div>
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub Actions</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">DevOps</span>
+            <span class="badge">Linux</span>
+            <span class="badge">Git & GitHub</span>
+            <span class="badge">CI/CD Pipeline</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Lighthouse CI</span>
+            <span class="badge">Cloud</span>
         </div>
 
         <div class="footer">
@@ -98,9 +97,5 @@
             <p> Push code → CI Build → Auto Deploy → Live! </p>
         </div>
     </div>
-
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
-    </script>
 </body>
 </html>

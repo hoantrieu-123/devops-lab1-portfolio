@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Lab 1 — My Portfolio</title>
+    <title>DevOps Lab 1 — Liên hệ</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -36,12 +36,6 @@
             font-size: 14px;
             margin: 4px;
         }
-        .anh{
-            margin-left: 180px;
-            border-radius: 999px;
-            width: 100px;
-            height: 100px;
-        }
         .footer { margin-top: 24px; font-size: 13px; color: #999; }
         .status { color: #38a169; font-weight: bold; }
 
@@ -60,37 +54,40 @@
             color: #764ba2;
             text-decoration: underline;
         }
+        .info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .info a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Navigation Menu -->
         <div class="nav">
-            <a href="index.html" class="active">Trang chủ</a> |
+            <a href="index.html">Trang chủ</a> |
             <a href="about.html">Giới thiệu</a> |
-            <a href="contact.html">Liên hệ</a>
+            <a href="contact.html" class="active">Liên hệ</a>
         </div>
 
-        <h1> Hello, DevOps!</h1>
-        <h2>Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
+        <h1>Thông tin liên hệ</h1>
+        <h2>Lab 1 — Kết nối với Hoàng Xuân Triều</h2>
 
         <div class="info">
-            <img class="anh" src="anhcanhan.jpg" alt="anhcanhan">
-            <h1> Xin chào, Hoàng Xuân Triều</h1>
-            <h2>Lab 1 — Website đã được cập nhật tự động! </h2>
-            <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
-            <p> <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
-            <p> <strong>Ngày deploy:</strong> <span id="date"></span></p>
-            <p> <strong>Pipeline status:</strong> <span class="status"> Automated</span></p>
+            <p><strong>Họ và tên:</strong> Hoàng Xuân Triều</p>
+            <p><strong>Email:</strong> <a href="mailto:hoangxuantrieu.dev@gmail.com">hoangxuantrieu.dev@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/hoantrieu-123" target="_blank">github.com/hoantrieu-123</a></p>
+            <p><strong>Khu vực:</strong> Việt Nam</p>
+            <p><strong>Trạng thái:</strong> <span class="status">Sẵn sàng kết nối</span></p>
         </div>
 
         <div>
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub Actions</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">DevOps</span>
+            <span class="badge">Email</span>
+            <span class="badge">GitHub</span>
+            <span class="badge">LinkedIn</span>
+            <span class="badge">DevOps Community</span>
         </div>
 
         <div class="footer">
@@ -98,9 +95,5 @@
             <p> Push code → CI Build → Auto Deploy → Live! </p>
         </div>
     </div>
-
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
-    </script>
 </body>
 </html>
